@@ -14,6 +14,7 @@ Usage
 ---
 ```bash
 hex -d 134
-hex john
-hex -s john
+hex "john doe"
+hex -s "john doe"
+hex HEX
 ```
