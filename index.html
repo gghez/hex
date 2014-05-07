@@ -28,21 +28,13 @@
         </ul>
       </header>
       <section>
-        <h3>
-<a name="welcome-to-hex-project-home-page" class="anchor" href="#welcome-to-hex-project-home-page"><span class="octicon octicon-link"></span></a>Welcome to Hex project Home page</h3>
+        <h1>
+<a name="hex-project-home-page" class="anchor" href="#hex-project-home-page"><span class="octicon octicon-link"></span></a>Hex project Home page</h1>
 
 <p>Hex is a simple command line tool allowing display hexadecimal representation of any input source (number, string, standard input, file).</p>
 
-<p>Usage samples:</p>
-
-<pre><code>hex -d 134
-hex "john doe"
-hex -s "john doe"
-hex HEX
-</code></pre>
-
-<h3>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>From the folder where you unzip project, type the following commands:</p>
 
@@ -50,15 +42,58 @@ hex HEX
 make install
 </code></pre>
 
+<h2>
+<a name="display-hexadecimal-value-of" class="anchor" href="#display-hexadecimal-value-of"><span class="octicon octicon-link"></span></a>Display hexadecimal value of</h2>
+
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a name="a-decimal-base-10-number" class="anchor" href="#a-decimal-base-10-number"><span class="octicon octicon-link"></span></a>A decimal (base-10) number</h3>
+
+<pre><code>hex -d &lt;number&gt;
+</code></pre>
+
+<h3>
+<a name="a-character-string" class="anchor" href="#a-character-string"><span class="octicon octicon-link"></span></a>A character string</h3>
+
+<pre><code>hex -s &lt;string&gt;
+hex -s "&lt;multiple&gt; &lt;words&gt; &lt;string&gt;"
+hex &lt;string&gt;
+hex "&lt;multiple&gt; &lt;words&gt; &lt;string&gt;"
+</code></pre>
+
+<h3>
+<a name="the-standard-input-stream" class="anchor" href="#the-standard-input-stream"><span class="octicon octicon-link"></span></a>The standard input stream</h3>
+
+<pre><code>echo &lt;string&gt; | hex
+hex
+# then type anything terminated by Ctrl+D
+</code></pre>
+
+<h3>
+<a name="a-file" class="anchor" href="#a-file"><span class="octicon octicon-link"></span></a>A file</h3>
+
+<pre><code>hex -f &lt;file_path&gt;
+cat &lt;anyfile&gt; | hex
+</code></pre>
+
+<h2>
+<a name="other-use-cases" class="anchor" href="#other-use-cases"><span class="octicon octicon-link"></span></a>Other use cases</h2>
+
+<h3>
+<a name="read-a-large-content" class="anchor" href="#read-a-large-content"><span class="octicon octicon-link"></span></a>Read a large content</h3>
+
+<pre><code>hex -f &lt;big_file&gt; | more
+</code></pre>
+
+<h3>
+<a name="find-an-hexadecimal-value" class="anchor" href="#find-an-hexadecimal-value"><span class="octicon octicon-link"></span></a>Find an hexadecimal value</h3>
+
+<pre><code>hex -f &lt;file&gt; | grep "6C 3F"
+</code></pre>
+
+<h2>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h2>
 
 <p>For now, <a href="https://github.com/gghez" class="user-mention">@gghez</a> is the only contributor of this project.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Have a look to the wiki pages for more use cases.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/gghez">gghez</a></p>
