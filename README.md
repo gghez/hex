@@ -18,3 +18,5 @@ hex "john doe"
 hex -s "john doe"
 hex HEX
 ```
+
+More use cases on project home page: http://gghez.github.io/hex/
